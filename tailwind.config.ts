@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: "var(--font-playfair)",
+      },
       colors: {
         primary: {
           100: "#FF8207",
