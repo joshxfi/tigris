@@ -3,6 +3,8 @@ import { Playfair_Display } from "next/font/google";
 import { GeistSans } from "geist/font";
 import "./globals.css";
 
+import { Navbar } from "@/components/navbar";
+
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
@@ -20,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${GeistSans.className} ${playfairDisplay.variable}`}>
+      <body
+        className={`${GeistSans.className} ${playfairDisplay.variable} max-w-screen-lg mx-auto px-6 xl:px-0`}
+      >
+        <Navbar />
         {children}
       </body>
     </html>
