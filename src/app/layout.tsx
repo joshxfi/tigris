@@ -22,11 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${GeistSans.className} ${playfairDisplay.variable} max-w-screen-lg mx-auto px-6 xl:px-0`}
-      >
-        <Navbar />
-        {children}
+      <body className={`${GeistSans.className} ${playfairDisplay.variable}`}>
+        <main className="max-w-screen-xl mx-auto container">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

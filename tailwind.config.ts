@@ -22,6 +22,7 @@ const config: Config = {
           300: "#1C1C1C",
           400: "#111111",
         },
+        dirtyWhite: "#FFF1E0"
       },
     },
   },

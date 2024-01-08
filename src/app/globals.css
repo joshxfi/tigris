@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-secondary-400 text-[#FAF9F6];
+    @apply bg-secondary-400 text-dirtyWhite;
   }
 }
