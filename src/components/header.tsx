@@ -26,7 +26,7 @@ export function Header() {
         <p>& </p>
         <p className="rounded-full bg-primary-200 md:px-8 px-6 ml-3">technology</p>
 
-        <Image src={arrow} alt="Arrow" className="xl:h-[80px] lg:h-[70px] md:h-[50px] h-[30px] lg:-ml-0 md:-ml-4 -ml-6" />
+        <Image src={arrow} alt="Arrow" className="xl:h-[80px] lg:h-[70px] md:h-[50px] h-[30px] lg:ml-2 md:-ml-4 -ml-6" />
       </div>
     </div>
   );

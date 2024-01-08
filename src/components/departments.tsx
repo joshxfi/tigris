@@ -11,7 +11,7 @@ export function Departments() {
           alt="Tigris Logo"
         />
 
-        <p className="rounded-full bg-primary-200 px-4 inline-block md:text-2xl text-xl mb-6 font-semibold">
+        <p className="rounded-full bg-primary-200 px-4 inline-block md:text-3xl text-xl mb-6 font-semibold">
           departments
         </p>
 
