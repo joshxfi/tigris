@@ -1,12 +1,12 @@
 
 export function About() {
   return (
-    <section className="py-44 border-y-2 border-secondary-200 flex justify-between items-center space-x-12">
+    <section className="md:py-44 py-32 border-y-2 border-secondary-200 flex justify-between items-center space-x-12">
       <div>
-        <p className="rounded-full bg-primary-200 px-4 inline-block text-2xl mb-6 font-semibold">
+        <p className="rounded-full bg-primary-200 px-4 inline-block md:text-2xl text-xl mb-6 font-semibold">
           about us
         </p>
-        <p className="text-5xl leading-normal">
+        <p className="md:text-5xl text-[6vw] md:leading-normal">
           Tigris serves as
           a platform for students to express their creativity, share their
           ideas, and contribute to the diverse array of content spanning art,
