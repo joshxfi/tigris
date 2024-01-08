@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistSans.className} ${playfairDisplay.variable}`}>
-        <main className="max-w-screen-xl mx-auto container px-6 xl:px-0">
+        <main className="max-w-screen-xl mx-auto container px-6 md:px-12 2xl:px-0">
           <Navbar />
           {children}
         </main>
