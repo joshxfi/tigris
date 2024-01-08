@@ -15,7 +15,7 @@ export function Departments() {
           departments
         </p>
 
-        <p className="text-center md:text-3xl text-xl max-w-4xl pt-4 leading-normal md:leading-normal">
+        <p className="text-center md:text-3xl text-lg max-w-4xl pt-4 leading-normal md:leading-normal">
           We aim to foster a collaborative and inclusive environment where
           students can showcase their talents and voice their perspectives on
           various topics of interest.

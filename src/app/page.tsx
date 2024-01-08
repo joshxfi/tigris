@@ -4,7 +4,7 @@ import { Departments } from "@/components/departments";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-44 pb-24">
+    <main className="flex flex-col md:space-y-44 space-y-32 pb-24">
       <Header />
       <About />
       <Departments />

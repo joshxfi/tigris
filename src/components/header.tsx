@@ -3,7 +3,7 @@ import arrow from "@/assets/arrow.svg";
 
 export function Header() {
   return (
-    <div className="mx-auto flex flex-col justify-center items-center mt-24 2xl:text-8xl text-[6vw] font-extrabold leading-tight 2xl:leading-tight">
+    <div className="mx-auto flex flex-col justify-center items-center md:mt-24 mt-16 2xl:text-8xl text-[6vw] font-extrabold leading-tight 2xl:leading-tight">
       <div>
         <p className="text-secondary-100 uppercase text-[2vw] md:text-lg tracking-[0.2rem] font-medium text-right md:mr-20 xl:mr-28 mr-9">
           University of St. La Salle
