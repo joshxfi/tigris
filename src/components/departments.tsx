@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Departments() {
   return (
-    <div>
+    <div id="departments" className="scroll-mt-24">
       <div className="flex flex-col items-center space-y-4">
         <Image
           src="/assets/images/tigris-orbit.png"

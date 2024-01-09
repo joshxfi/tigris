@@ -1,11 +1,18 @@
+"use client";
+
 import Image from "next/image";
+import { toast } from "sonner";
+
 import arrow from "@/assets/arrow.svg";
 import scribble from "@/assets/scribble.svg";
 import cetOrbit from "@/assets/images/cet-orbit.png";
 
 export function Council() {
   return (
-    <div className="md:py-44 py-28 border-t-2 border-secondary-200 flex justify-between items-center flex-col-reverse xl:flex-row">
+    <div
+      id="council"
+      className="md:py-44 py-28 border-t-2 border-secondary-200 flex justify-between items-center flex-col-reverse xl:flex-row"
+    >
       <div className="md:text-6xl text-[6vw] font-extrabold leading-tight md:leading-tight flex flex-col xl:items-start items-center">
         <h1>
           introducing the{" "}
@@ -35,7 +42,11 @@ export function Council() {
           true tiger.
         </p>
 
-        <button className="px-8 py-3 mt-8 border border-dirtyWhite rounded-full md:text-2xl text-lg font-medium">
+        <button
+          type="button"
+          onClick={() => toast.info("Coming Soon!")}
+          className="px-8 py-3 mt-8 border-2 border-dirtyWhite rounded-full md:text-2xl text-lg font-medium hover:bg-dirtyWhite transition-all hover:text-secondary-300"
+        >
           Learn more &nbsp; &rarr;
         </button>
       </div>

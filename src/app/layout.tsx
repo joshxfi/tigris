@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
-import { GeistSans } from "geist/font";
+import { GeistSans } from "geist/font/sans";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
@@ -21,9 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${GeistSans.className} ${playfairDisplay.variable}`}>
         <main className="max-w-screen-xl mx-auto container px-6 md:px-12 2xl:px-0">
+          <Toaster />
           <Navbar />
           {children}
         </main>

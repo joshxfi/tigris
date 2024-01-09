@@ -67,11 +67,13 @@ function Feedback({
 
         <figcaption>
           <h3 className="font-medium">{name}</h3>
-          <h4 className="text-primary-100 md:text-lg text-base font-light">{position}</h4>
+          <h4 className="text-primary-100 md:text-lg text-base font-light">
+            {position}
+          </h4>
         </figcaption>
       </div>
 
-      <p className="mt-6 font-light">{content}</p>
+      <blockquote className="mt-6 font-light">{content}</blockquote>
     </figure>
   );
 }
