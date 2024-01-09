@@ -2,6 +2,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Departments } from "@/components/departments";
 import { Council } from "@/components/council";
+import { Feedbacks } from "@/components/feedbacks";
 
 export default function Home() {
   return (
@@ -9,7 +10,11 @@ export default function Home() {
       <Header />
       <About />
       <Departments />
-      <Council />
+
+      <div>
+        <Council />
+        <Feedbacks />
+      </div>
     </main>
   );
 }
