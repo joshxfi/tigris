@@ -47,14 +47,14 @@ export function Header() {
       <div className="flex md:space-x-8 space-x-2">
         <h1>college of </h1>
         <div className="rounded-full bg-primary-100 md:px-8 px-6 overflow-hidden">
-          <p id="engineering">engineering</p>
+          <h1 id="engineering">engineering</h1>
         </div>
       </div>
 
       <div className="md:mt-4 mt-2 flex ml-12">
-        <p>& </p>
+        <h1>& </h1>
         <div className="rounded-full bg-primary-200 md:px-8 px-6 ml-3 overflow-hidden">
-          <p id="technology">technology</p>
+          <h1 id="technology">technology</h1>
         </div>
 
         <Image
