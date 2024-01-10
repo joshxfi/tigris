@@ -1,8 +1,43 @@
+"use client";
+
+import gsap from "gsap";
+import { useRef } from "react";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function Departments() {
+  const container = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      ScrollTrigger.defaults({
+        start: "top center",
+        toggleActions: "play none none reset",
+        markers: process.env.NODE_ENV === "development",
+      });
+
+      gsap.to(".ascribe", {
+        scrollTrigger: "#ascribe",
+        rotate: 360,
+      });
+
+      gsap.to(".artem", {
+        scrollTrigger: "#artem",
+        rotate: 360,
+      });
+
+      gsap.to(".apertura", {
+        scrollTrigger: "#apertura",
+        rotate: 360,
+      });
+    },
+    { scope: container }
+  );
   return (
-    <div id="departments" className="scroll-mt-24">
+    <div id="departments" ref={container} className="scroll-mt-24">
       <div className="flex flex-col items-center space-y-4">
         <Image
           src="/assets/images/tigris-orbit.png"
@@ -57,18 +92,20 @@ type Props = {
 
 function Department({ title, pronunciation, description }: Props) {
   return (
-    <figure>
+    <figure id={title}>
       <section className="flex md:space-x-6 space-x-4">
         <Image
           src={`/assets/images/${title}-icon.svg`}
           width={50}
           height={50}
-          className="w-[40px] md:w-[50px]"
+          className={`w-[40px] md:w-[50px] ${title}`}
           alt={title}
         />
         <figcaption className="flex md:space-x-4 space-x-2 items-center">
           <h3 className="md:text-5xl text-4xl font-semibold">{title}</h3>
-          <p className="md:text-2xl text-lg font-playfair italic">{pronunciation}</p>
+          <p className="md:text-2xl text-lg font-playfair italic">
+            {pronunciation}
+          </p>
         </figcaption>
       </section>
 
