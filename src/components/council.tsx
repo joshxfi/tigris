@@ -5,7 +5,6 @@ import { useRef } from "react";
 import Image from "next/image";
 import { toast } from "sonner";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import arrow from "@/assets/arrow.svg";
 import scribble from "@/assets/scribble.svg";
@@ -17,8 +16,6 @@ export function Council() {
 
   useGSAP(
     () => {
-      gsap.registerPlugin(ScrollTrigger);
-
       tl.current = gsap
         .timeline({
           scrollTrigger: {
