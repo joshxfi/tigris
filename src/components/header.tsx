@@ -8,11 +8,22 @@ import arrow from "@/assets/arrow.svg";
 
 export function Header() {
   const container = useRef<HTMLDivElement>(null);
+  const tl = useRef<GSAPTimeline>();
 
   useGSAP(
     () => {
-      gsap.from("#engineering", { x: -800, duration: 1.5, ease: "power2.out" });
-      gsap.from("#technology", { x: 800, duration: 2, delay: 0.5, ease: "bounce.out" });
+      tl.current = gsap
+        .timeline()
+        .from("#engineering", { x: -800, duration: 1.5 })
+        .from(
+          "#technology",
+          {
+            x: 800,
+            duration: 2,
+            ease: "bounce.out",
+          },
+          1
+        );
     },
     { scope: container }
   );
