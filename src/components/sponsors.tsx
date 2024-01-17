@@ -15,7 +15,7 @@ export function Sponsors() {
       </h3>
 
       <div>
-        <div className="rounded-lg bg-secondary-200 p-4 inline-block">
+        <div className="rounded-lg bg-secondary-200 md:p-4 p-2 inline-block">
           <Image
             src={gracePharmacy}
             placeholder="blur"
@@ -36,7 +36,7 @@ export function Sponsors() {
 
 function Sponsor(props: ImageProps) {
   return (
-    <div className="rounded-lg bg-secondary-200 p-4">
+    <div className="rounded-lg bg-secondary-200 md:p-4 p-2">
       <Image
         placeholder="blur"
         className="w-[130px] object-contain rounded-md"
